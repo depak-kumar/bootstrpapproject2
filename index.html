@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Food Website Bootstrap</title>
+    <style>
+        .margin{
+            margin-top: 4rem;
+            
+        }
+        .back{
+            background-color: bisque;
+        }
+        .margi{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            margin-right: 8rem;
+            margin-left: 8rem;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">FOODER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feautures">Feautures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">login</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign-Up</button>
+                </div>
+            </div>
+        </nav>
+        <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Fooder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sing up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an Acoount</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signupInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="container" id="home">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Food Blog</h1>
+                <p class="lead font-weight-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    voluptatum officia dignissimos, consectetur officiis quidem.</p>
+                <!-- <button type="button" class="btn btn-danger">Danger</button> -->
+                <a class="btn btn-danger" href="#">Additional Ammenties</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+    </div>
+    <section id="about">
+        <h1 align="center">About Our Facilities</h1>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th?id=OIP.aSA2ok4zKuUHuEkUOTIkewHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                                    ut lorem5
+                                    Lorem ipsum dolor sit.
+                                    .</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th?id=OIP.qvaijTsq5EZxxclvI-z1LQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                                    deleniti voluptate incidunt tenetur laboriosam nesciunt?</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th?id=OIP.cXzAqs3GQ-sAFDbD7jUgpgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
+                                    tempora.t is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.qG94KlkEjkJpkN4VTcJNpgHaFS?w=267&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius
+                                    sapiente fugit cum repellendus dignissimos ad facilis..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.zESNX1ZxVHsHjTzH75yT8gHaEK?w=275&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+                                    odio reiciendis delectus aut at ipsam libero ratione provident..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.Yq2jKh0IAWl8oEJKHKCoOgHaEK?w=325&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.Cj-RbZzfRAukmWErWiBLDgHaEo?w=265&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    earum quos odio, enim perferendis velit itaque quo!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.vqRxzfyKjGXq0nhjMNDUIAHaE6?w=300&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                    quasi excepturi dolore quae quas, quo illum!t longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.tCIXFQlKi5L8xkU5KGfwMQHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                                    incidunt eaque provident aperiam voluptatem cumque..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-danger">View</button>
+
+                                    </div>
+                                    <!-- <small class="text-muted">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feautures" class="mx-10 my-10">
+        <h1 align="center">Dishes We Have</h1>
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://th.bing.com/th/id/OIP.qW7EAYaNx6NmWo_xLoUxtAHaEK?w=331&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+                    <h2>Fruits</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                        ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Buy Now</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="https://th.bing.com/th/id/OIP.qJC0g3k8WiDrY4oBu2fgbwHaFE?w=276&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+                    <h2>Vegetables</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
+                        tortor mauris condimentum nibh.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Buy Now</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="https://th.bing.com/th/id/OIP.RUXG5uE_cf4Gbj_7UICCQAAAAA?w=123&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+                    <h2>Nutricious and health</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Buy Now</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider my-10">
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Horse Grams<span class="text-muted">It’ll blow your mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://www.thespruceeats.com/thmb/1iuwVhJ1MMFE_LFEjViFC4wvduU=/2121x1414/filters:fill(auto,1)/Salmonpasta-GettyImages-992756864-d454fada19514790bfd2a2b6bc133ffd.jpg"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Baked Beans <span class="text-muted">See for yourself.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://th.bing.com/th?q=Healthy+Beans+Dish&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Mix Vegtable<span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://th.bing.com/th/id/OIP.ok6oSBriaIX_wRnnHcGrkAHaFj?w=259&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" alt="">
+                </div>
+
+                <hr class="featurette-divider">
+
+                <!-- /END THE FEATURETTES -->
+
+            </div>
+
+    </section>
+    <section id="contact" class="margi">
+        <h1 align="center" >Contact Us</h1>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </section>
+    <footer class="mx-10 my-10 margin ">
+        <footer class="blog-footer mx-10 my-10 back d-flex justify-content-center align-items-center">
+            <p> Food Blog template built for poject <br>by - Deepak Kumar<br> <a href="#home">Back to top</a></p>
+            <br>
+           
+            
+          </footer>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
